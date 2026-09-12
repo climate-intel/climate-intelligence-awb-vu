@@ -164,3 +164,94 @@ footer{background:#243d2f}
 
 .faculty-note{max-width:900px!important;margin:24px auto 0!important;padding:16px 20px;background:#f1f4eb;border-top:1px solid #d6dfd0;color:#385344!important;font-size:.9rem!important}
 .faculty-note strong{color:#294936}
+
+/* =========================================================
+   V5 — LOCAL PARTNER LOGOS
+   IEEE Young Professionals · IEEE Local Group · GRSS
+   ========================================================= */
+footer{
+  display:block;
+  padding:58px 7vw 30px;
+}
+.footer-main{
+  display:grid;
+  grid-template-columns:1fr 1.5fr 1fr;
+  gap:30px;
+  align-items:center;
+  font-size:.8rem;
+}
+.local-partner{
+  margin-top:42px;
+  padding-top:34px;
+  border-top:1px solid rgba(255,255,255,.15);
+  text-align:center;
+}
+.local-partner h2{
+  margin:0 0 26px;
+  color:#d9dfbd;
+  font-family:"DM Sans",sans-serif;
+  font-size:.78rem;
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.local-partner-logos{
+  width:min(1180px,100%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:center;
+  justify-items:center;
+  gap:clamp(14px,3vw,48px);
+}
+.partner-logo{
+  width:100%;
+  min-width:0;
+  min-height:105px;
+  padding:7px 8px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.partner-logo img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+.partner-logo-yp img{
+  max-height:118px;
+}
+.partner-logo-local img{
+  max-height:118px;
+}
+.partner-logo-grss img{
+  max-height:112px;
+}
+footer small{
+  display:block;
+  margin-top:32px;
+  padding-top:25px;
+  border-top:1px solid #ffffff20;
+}
+@media(max-width:900px){
+  .footer-main{grid-template-columns:1fr;gap:18px}
+  .local-partner-logos{gap:18px}
+}
+@media(max-width:700px){
+  footer{padding:48px 6vw 25px}
+  .local-partner{margin-top:34px;padding-top:28px}
+  .local-partner-logos{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:8px;
+  }
+  .partner-logo{min-height:70px;padding:2px 3px}
+  .partner-logo-yp img,
+  .partner-logo-local img,
+  .partner-logo-grss img{
+    max-height:72px;
+  }
+}
