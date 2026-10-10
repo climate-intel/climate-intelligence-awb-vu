@@ -255,3 +255,86 @@ footer small{
     max-height:72px;
   }
 }
+
+
+
+/* =========================================================
+   FAQ — practical information for workshop participants
+   ========================================================= */
+.faq-section{
+  background:#f6f7f1;
+}
+.faq-heading{
+  max-width:850px;
+  margin:0 auto 30px;
+  text-align:center;
+}
+.faq-heading h2{
+  margin:0 0 14px;
+  color:var(--ink);
+  font:600 clamp(2rem,4vw,3.2rem) "Playfair Display",serif;
+}
+.faq-heading h2 em{
+  color:#71875a;
+}
+.faq-heading p{
+  max-width:650px;
+  margin:0 auto;
+  color:var(--muted);
+  line-height:1.7;
+}
+.faq-list{
+  max-width:900px;
+  margin:0 auto;
+  border-top:1px solid #d7dfd1;
+}
+.faq-item{
+  border-bottom:1px solid #d7dfd1;
+  background:rgba(255,255,255,.66);
+}
+.faq-item summary{
+  position:relative;
+  cursor:pointer;
+  list-style:none;
+  padding:22px 56px 22px 22px;
+  color:var(--ink);
+  font-weight:700;
+  line-height:1.5;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{
+  content:"+";
+  position:absolute;
+  right:22px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#71875a;
+  font-size:1.55rem;
+  font-weight:400;
+}
+.faq-item[open] summary:after{content:"−"}
+.faq-item summary:focus-visible{
+  outline:3px solid #71875a;
+  outline-offset:-3px;
+}
+.faq-answer{
+  padding:0 22px 22px;
+  color:#526357;
+  line-height:1.75;
+}
+.faq-answer p{margin:0 0 12px}
+.faq-answer p:last-child{margin-bottom:0}
+.faq-answer strong{color:var(--ink)}
+.faq-form-link{
+  display:inline-block;
+  margin-top:4px;
+  color:#385b43;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+@media(max-width:600px){
+  .faq-item summary{padding:18px 46px 18px 16px}
+  .faq-item summary:after{right:16px}
+  .faq-answer{padding:0 16px 18px}
+}
